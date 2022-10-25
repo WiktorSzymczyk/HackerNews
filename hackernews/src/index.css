@@ -33,7 +33,7 @@ body {
 .search-container {
   background-color: white;
   display: flex;
-  width: calc(100% - 240px);
+  width: calc(95% - 240px);
   margin-left: 30px;
 }
 .search-icon {
@@ -51,4 +51,15 @@ body {
   padding: 16px 144px 16px 20px;
   color: rgba(0, 0, 0, 0.75);
   outline-offset: -2px;
+}
+
+.filter-container {
+  margin: 10px 0;
+  display: flex;
+  gap: 10px;
+}
+
+.filter-option {
+  display: flex;
+  gap: 10px;
 }
