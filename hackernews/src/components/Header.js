@@ -4,12 +4,11 @@ import Logo from "../asset/logo-hn-search-a822432b.webp";
 
 const Header = () => {
   return (
-    <div>
+    <div className="header-container">
       <img src={Logo} alt="Logo" />
-      <h1 className="header-title">
+      <h2 className="header-title">
         Search <br /> Hacker News
-      </h1>
-
+      </h2>
       <Search />
     </div>
   );
