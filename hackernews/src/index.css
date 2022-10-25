@@ -6,6 +6,9 @@ body {
   color: #000;
   box-sizing: border-box;
 }
+.a {
+  text-decoration: none;
+}
 
 .container {
   width: calc(85% - 10px);
@@ -53,13 +56,55 @@ body {
   outline-offset: -2px;
 }
 
+.main-container {
+  width: 100%;
+  background-color: #f6f6ef;
+  padding: 4px;
+}
+
 .filter-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-left {
   margin: 10px 0;
   display: flex;
   gap: 10px;
 }
 
+.filter-right {
+  display: flex;
+  gap: 10px;
+}
 .filter-option {
   display: flex;
   gap: 10px;
+}
+
+.search-article {
+  padding: 0 16px;
+  min-height: 40px;
+}
+
+.main-page-button {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer-container {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #000;
+  font-size: 12px;
+}
+
+.footer-li-noStyle {
+  list-style-type: none;
 }
