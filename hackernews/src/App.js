@@ -1,3 +1,5 @@
+import data from "./asset/data.json";
+
 function App() {
   return (
     <div className="App">
