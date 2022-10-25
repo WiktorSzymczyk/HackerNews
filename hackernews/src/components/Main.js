@@ -1,9 +1,12 @@
 import React from "react";
-import Aticle from "./components/Article";
+import Filter from "./Filter";
+import Article from "./Article";
+
 const Main = () => {
   return (
     <div>
-      <Aticle />
+      <Filter />
+      <Article />
     </div>
   );
 };
