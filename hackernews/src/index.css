@@ -91,6 +91,10 @@ body {
   min-height: 40px;
 }
 
+.article-url {
+  text-decoration: none;
+}
+
 .article-title {
   font-size: 14px;
 }
