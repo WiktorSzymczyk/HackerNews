@@ -67,6 +67,7 @@ function App() {
           Search
         </button>
       </div>
+
       <Main hits={hits} text={text} />
       <Footer />
     </div>
