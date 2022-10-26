@@ -90,6 +90,20 @@ body {
   min-height: 40px;
 }
 
+.article-title {
+  font-size: 14px;
+}
+
+.article-url {
+  color: #828282;
+  font-size: 13px;
+}
+
+.article-bottom {
+  font-size: 10.67px;
+  color: #696969;
+}
+
 .main-page-button {
   display: flex;
   justify-content: center;

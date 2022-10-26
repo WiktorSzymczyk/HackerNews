@@ -1,13 +1,24 @@
 import React from "react";
 
-const Article = ({ hits }) => {
-  const article = hits.map(
+const Article = ({ hits, text }) => {
+  const filtered = hits.filter((x) => {
+    console.log(x);
+    return (
+      x.title?.includes(text) ||
+      x.author?.includes(text) ||
+      x.url?.includes(text)
+    );
+  });
+
+  const article = filtered.map(
     ({ title, url, points, author, created_at, num_comments }, index) => {
       return (
         <article className="search-article" key={index}>
           <div className="article-top">
-            <span>{title}</span>
-            <span>{url}</span>
+            <span className="article-title">{title}</span>
+            <a className="article-url" href={url}>
+              {url}
+            </a>
           </div>
           <div className="article-bottom">
             <span>
@@ -32,12 +43,7 @@ const Article = ({ hits }) => {
     }
   );
 
-  return (
-    <div className="search-result-container">
-      {/* {article.filter(({ hits }) => hits.includes("Python"))} */}
-      {article}
-    </div>
-  );
+  return <div className="search-result-container">{article}</div>;
 };
 
 export default Article;
