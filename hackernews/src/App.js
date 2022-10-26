@@ -54,7 +54,7 @@ function App() {
             onSubmit={handleSubmit}
           >
             <input
-              type="search"
+              type="text"
               placeholder="Search stories by title, url or author"
               className="search-input"
               value={text}
@@ -63,6 +63,9 @@ function App() {
             />
           </form>
         </div>
+        <button className="search-button" onClick={handleSubmit}>
+          Search
+        </button>
       </div>
       <Main hits={hits} text={text} />
       <Footer />
