@@ -68,6 +68,7 @@ body {
 .filter-container {
   display: flex;
   justify-content: space-between;
+  padding: 0 16px;
 }
 
 .filter-left {
