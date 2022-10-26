@@ -15,9 +15,11 @@ const Article = ({ hits, text }) => {
         <article className="search-article" key={index}>
           <div className="article-top">
             <span className="article-title">{title}</span>
-            <a className="article-url" href={url}>
-              {url}
-            </a>
+            <div className="article-url-container">
+              <a className="article-url" href={url}>
+                {url}
+              </a>
+            </div>
           </div>
           <div className="article-bottom">
             <span href=""> {points} points </span>

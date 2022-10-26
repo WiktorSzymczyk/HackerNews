@@ -87,24 +87,38 @@ body {
 }
 
 .search-article {
+  display: flex;
+  flex-direction: column;
   padding: 0 16px;
   min-height: 40px;
 }
 
+.article-top {
+  display: flex;
+}
+
+.article-url-container {
+  width: 320px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 10px;
+}
 .article-url {
   text-decoration: none;
+  color: #828282;
+  font-size: 13px;
+}
+.article-url:hover {
+  text-decoration: underline;
 }
 
 .article-title {
   font-size: 14px;
 }
 
-.article-url {
-  color: #828282;
-  font-size: 13px;
-}
-
 .article-bottom {
+  margin-top: 1.2px;
   display: flex;
   gap: 6px;
   font-size: 10.67px;
@@ -115,9 +129,12 @@ body {
   display: flex;
   justify-content: center;
   gap: 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
 
 .footer-container {
+  margin-top: 50px;
   display: flex;
   gap: 15px;
   justify-content: center;
