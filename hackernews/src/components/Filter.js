@@ -7,9 +7,7 @@ const filter = () => {
         <div className="filter-option">
           <span>Search</span>
           <select className="select-options">
-            <option selected value="All">
-              All
-            </option>
+            <option defaultValue="All">All</option>
             <option value="Stories">Stories</option>
             <option value="Comments">Comments</option>
           </select>
@@ -17,18 +15,14 @@ const filter = () => {
         <div className="filter-option">
           <span>by</span>
           <select className="select-options">
-            <option selected value="Popularity">
-              Popularity
-            </option>
+            <option defaultValue="Popularity">Popularity</option>
             <option value="Date">Date</option>
           </select>
         </div>
         <div className="filter-option">
           <span>for</span>
           <select className="select-options">
-            <option selected value="All time">
-              All time
-            </option>
+            <option defaultValue="All time">All time</option>
             <option value="Last 24h">Last 24h</option>
             <option value="Past Week">Past Week</option>
             <option value="Past Month">Past Month</option>
@@ -48,9 +42,9 @@ const filter = () => {
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           >
             <circle cx="18" cy="5" r="3"></circle>
             <circle cx="6" cy="12" r="3"></circle>

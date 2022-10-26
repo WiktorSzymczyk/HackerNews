@@ -1,6 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 
-const Search = () => {
+const Search = ({ text, setText }) => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(e.target.value);
+    // if (!text) {
+    //   alert("Input is empty");
+    // } else {
+    setText(e.target.value);
+    setText("");
+    // }
+  };
   return (
     <div className="search-container">
       <span className="search-icon">
@@ -11,20 +21,25 @@ const Search = () => {
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         >
           <circle cx="11" cy="11" r="8"></circle>
           <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
         </svg>
       </span>
-      <input
-        type="search"
-        placeholder="Search stories by title, url or author"
-        className="search-input"
-        value=""
-      />
+
+      <form className="search-input-form" onSubmit={handleSubmit}>
+        <input
+          type="search"
+          placeholder="Search stories by title, url or author"
+          className="search-input"
+          value={text}
+          autoComplete="off"
+          onChange={handleSubmit}
+        />
+      </form>
     </div>
   );
 };

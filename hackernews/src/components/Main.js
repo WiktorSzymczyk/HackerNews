@@ -2,11 +2,11 @@ import React from "react";
 import Filter from "./Filter";
 import Article from "./Article";
 
-const Main = () => {
+const Main = ({ hits }) => {
   return (
     <div className="main-container">
       <Filter />
-      <Article />
+      <Article hits={hits} />
       <div className="main-page-button">
         <button>1</button>
         <button>2</button>
