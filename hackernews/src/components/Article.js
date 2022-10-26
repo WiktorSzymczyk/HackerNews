@@ -21,7 +21,14 @@ const Article = ({ hits, text }) => {
             </a>
           </div>
           <div className="article-bottom">
-            <span>
+            <span href=""> {points} points </span>
+            <span>|</span>
+            <span href=""> {author}</span>
+            <span>|</span>
+            <span href=""> {created_at} years ago</span>
+            <span>|</span>
+            <span href=""> {num_comments} comments</span>
+            {/* <span>
               <span href=""> {points} points </span>
               <span>|</span>
             </span>
@@ -36,7 +43,7 @@ const Article = ({ hits, text }) => {
             <span>
               <span href=""> {num_comments} comments</span>
               <span>|</span>
-            </span>
+            </span> */}
           </div>
         </article>
       );
