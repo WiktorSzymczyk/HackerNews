@@ -151,8 +151,8 @@ body {
 }
 
 .search-empty-img {
-  width: 650px;
-  margin-top: -60px;
+  width: 500px;
+  margin-top: -30px;
   margin-bottom: -70px;
 }
 .search-empty-container {
@@ -162,11 +162,11 @@ body {
   margin-bottom: 100px;
 }
 .search-empty-container > h2 {
-  font-size: 36px;
+  font-size: 30px;
 }
 
 .search-empty-container > span {
-  font-size: 23px;
+  font-size: 20px;
   color: #696969;
   font-weight: 300;
   margin-top: -10px;
