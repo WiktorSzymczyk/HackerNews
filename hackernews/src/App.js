@@ -1,18 +1,17 @@
-import "./App.css";
-import hackerdata from "./hackerdata.json";
+import React, { useState, useEffect } from "react";
+import { getStoryIds } from "./services/HackernewsApi";
 
-function App() {
-  console.log(hackerdata)
+const App = () => {
+  //set the state to empty array
+  const [storyIds, setStoryIds] = useState([]);
 
-  return (
-    <div className="App">
-      <header class="SearchHeader container">
-            <div class="SearchHeader_search">
-              
-            </div>
-        </header>
-    </div>
-  );
-}
+  console.log(storyIds)
+
+  useEffect(() => {
+    getStoryIds().then(data => data && setStoryIds(data));
+  }, []);
+
+  return <p>{JSON.stringify(storyIds)}</p>;
+};
 
 export default App;
