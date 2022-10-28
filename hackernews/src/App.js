@@ -1,4 +1,4 @@
-import data from "./asset/data.json";
+// import data from "./asset/data.json";
 import Logo from "./asset/logo-hn-search-a822432b.webp";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
@@ -14,8 +14,8 @@ function App() {
   useEffect(() => {
     axios
       .get("http://hn.algolia.com/api/v1/search?tags=front_page")
-      .then((data) => {
-        setHits(data.data.hits);
+      .then(({ data }) => {
+        setHits(data.hits);
       });
   }, []);
 
@@ -79,6 +79,7 @@ function App() {
           Search
         </button>
       </div>
+      {/* <Main hits={hits} text={text} /> */}
       {hits ? <Main hits={hits} text={text} /> : "Loading"}
       <Footer />
     </div>
